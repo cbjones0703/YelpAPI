@@ -34,7 +34,7 @@ export class YelpSearchComponent implements OnInit {
   onFetch(): void {
     this._dbService.getData(this.searchYelp.controls['usersearch'].value,
     this.searchYelp.controls['userInput'].value)
-    .subscribe((res: any) => (this._yelps = res))
+    .subscribe((res: any) => (this._yelps = res.businesses[0], console.log(res)))
     console.log(this._yelps);
   }
 
