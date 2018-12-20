@@ -21,7 +21,7 @@ export class YelpSearchComponent implements OnInit {
   constructor(private _dbService: DatabaseService, private _fb: FormBuilder) { 
     setTimeout(() => {
       this.useBtn = true
-    }, 500)
+    }, 800)
   };
 
   ngOnInit() {
